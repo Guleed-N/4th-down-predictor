@@ -35,7 +35,7 @@ st.title("4th Down Decision Maker")
 st.write("Depending on the situation, this model will predict whether you should go for it, or opt to kick/punt")
 
 st.sidebar.header("Your Game Parameters:")
-yardline_100 = st.sidebar.slider("Yardline (distance to end zone)", 1, 100, 50)
+yardline_100 = st.sidebar.slider("Yardline (distance to end zone)", 1, 45, 30)
 ydstogo = st.sidebar.slider("Yards to Go for First Down", 1, yardline_100, 5)
 quarter = st.sidebar.slider("Quarter", 1, 4, 2)
 
