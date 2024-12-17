@@ -59,3 +59,4 @@ if prediction == 1:
     st.success("**Go for it!**")
 else:
     st.warning("**Kick or Punt.**")
+st.caption('Click the top left sidebar if on mobile :)')
