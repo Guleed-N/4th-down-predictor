@@ -32,7 +32,7 @@ X, y = preprocess_data(pbp_data)
 model = train_model(X, y)
 
 st.title("4th Down Decision Maker")
-st.write("Depending on the situation, this model will predict whether you should go for it, or opt to kick/punt")
+st.write("Depending on the situation, this model will guess whether you should go for it, or opt to kick a field goal")
 
 st.sidebar.header("Your Game Parameters:")
 yardline_100 = st.sidebar.slider("Yardline (distance to end zone)", 1, 30, 15)
@@ -58,5 +58,5 @@ st.subheader("Suggestion:")
 if prediction == 1:
     st.success("**Go for it!**")
 else:
-    st.warning("**Kick or Punt.**")
+    st.warning("**Kick a field goal.**")
 st.caption('Click the top left sidebar if on mobile :)')
