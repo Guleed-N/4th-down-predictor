@@ -37,7 +37,7 @@ st.write("Depending on the situation, this model will predict whether you should
 st.sidebar.header("Your Game Parameters:")
 yardline_100 = st.sidebar.slider("Yardline (distance to end zone)", 1, 30, 15)
 ydstogo = st.sidebar.slider("Yards to Go for First Down", 1, yardline_100, 5)
-quarter = st.sidebar.slider("Quarter", 1, 4, 2)
+quarter = st.sidebar.slider("Quarter", 2, 4, 4)
 
 user_input = pd.DataFrame({
     'yardline_100': [yardline_100],
